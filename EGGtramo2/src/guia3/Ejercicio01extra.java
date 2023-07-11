@@ -11,16 +11,16 @@ public class Ejercicio01extra {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         
-        int dia = 0;
-        int horas = 0;
+        
         
         System.out.println("Ingrese un tiempo expresado en minutos para calcular su equivalente en dias y horas: ");
-        
         int min = leer.nextInt();
+        int dias = min / 1440;
+        int horas = (min%1440)/60;
+        System.out.println(dias+" dias, "+horas+" horas.");
         
-        dia = min/1440;
-        
+        }
        
     }
     
-}
+
